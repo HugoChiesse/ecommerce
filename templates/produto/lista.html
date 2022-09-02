@@ -1,0 +1,26 @@
+{% extends "base/index.html" %}
+{% load omfilters %}
+
+{% block title %}
+  Produtos | 
+{% endblock title %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card-columns">
+
+            {% include "produto/partials/cards.html" %}
+
+        </div>
+    </div>
+</div>
+
+<div class="row mt-3">
+    <div class="col">
+        {% include 'base/_partials/_pagination.html' %}
+    </div>
+</div>
+
+{% endblock content %}
